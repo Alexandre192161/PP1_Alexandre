@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Lions Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-size: 3rem;">Lions Club</h1>
+    
+    <ul id="menu">
+      <li><a href="page1.html">Início</a></li>
+      <li><a href="page2.html">Atividades</a></li>
+      <li><a href="page3.html" class="ativo">Contato</a></li>
+      <li><a href="page4.html">Localização</a></li>
+    </ul>
+    
+    
+    <form action="page5.html" method="get" enctype="multipart/form-data">
+      <h2 style="text-align: center;color: rgb(255, 207, 6);">Contato</h2>
+      <fieldset>
+          <legend>Informações pessoais</legend>
+      <div>
+          <label for="cpf">CPF: </label>
+          <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}" required>
+      </div>
+      <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+      </div>
+      <div>
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+          <label for="tel">Telefone:</label>
+          <input type="tel" id="tel" name="tel" placeholder="(xx)xxxxx-xxxx" pattern="(\d{2}\)\d{5}\-\d{4}\">
+      </div> 
+      <div>
+          <label for="data">Data de nascimento:</label>
+          <input type="date" id="data" name="data">
+      </div> 
+      </fieldset> 
+      <fieldset>
+          <legend>Causas de interesse</legend>
+          <div>
+              <input type="checkbox" name="Causas[]" id="diab">
+              <label for="diab">Diabetes</label>
+          </div>
+          <div>
+              <input type="checkbox" name="causas[]" id="vis">
+              <label for="vis">Visão</label>
+          </div>
+          <div>
+              <input type="checkbox" name="causas[]" id="fome">
+              <label for="fome">Fome</label>
+          </div>
+          <div>
+            <input type="checkbox" name="causas[]" id="meio">
+            <label for="meio">Meio Ambiente</label>
+          </div>
+          <div>
+            <input type="checkbox" name="causas[]" id="can">
+            <label for="can">Câncer infantil</label>
+          </div>
+          
+      </fieldset>
+      <fieldset>
+          <legend>Já é um(a) associado(a)</legend>
+          <div>
+              <input type="radio" name="assoc" id="sim">
+              <label for="sim">Sim</label>
+          </div>
+          <div>
+              <input type="radio" name="assoc" id="nao">
+              <label for="nao">Não</label>
+          </div>
+      </fieldset>
+      <fieldset>
+          <legend>Mais informações</legend>
+          <div>
+              <textarea name="inf" id="inf" cols="30" rows="10" maxlength="200">
+              </textarea>
+              <br>
+              <input type="file" name="arq" id="arqu" multiple>
+          </div>
+      </fieldset>
+      <button>Enviar</button>
+      <input type="reset" value="Limpar">
+  </form>
+</body>
+</html>
